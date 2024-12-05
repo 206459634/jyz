@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章列表 - TECH BLOG</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">TECH BLOG</a>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="article.html">文章</a>
+                <a href="#">项目</a>
+                <a href="about.html">关于</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 文章列表容器 -->
+    <div class="articles-container">
+        <!-- 文章分类标签 -->
+        <div class="categories">
+            <a href="#" class="category active">全部</a>
+            <a href="#" class="category">人工智能</a>
+            <a href="#" class="category">Web开发</a>
+            <a href="#" class="category">区块链</a>
+            <a href="#" class="category">云计算</a>
+        </div>
+
+        <!-- 文章列表 -->
+        <div class="articles-grid">
+            <article class="article-card">
+                <div class="article-image">
+                    <img src="assets/ai-future.jpg" alt="AI未来">
+                </div>
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span>📅 2024-03-20</span>
+                        <span>🏷 作者：菅有志</span>
+                    </div>
+                    <h2 class="article-title">
+                        <a href="article-detail.html">深入探讨人工智能的未来发展</a>
+                    </h2>
+                    <p class="article-excerpt">
+                        随着深度学习技术的突破，AI领域正在经历前所未有的变革。本文将深入探讨最新的技术发展趋势和未来可能的应用场景...
+                    </p>
+                    <div class="article-footer">
+                        <span>👁️ 1,234</span>
+                        <span>💬 23</span>
+                        <a href="article-detail.html" class="read-more">阅读更多</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="article-image">
+                    <img src="assets/web3.jpg" alt="Web3.0">
+                </div>
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span>📅 2024-03-19</span>
+                        <span>🏷️ 区块链</span>
+                    </div>
+                    <h2 class="article-title">
+                        <a href="#">Web3.0技术革新与应用</a>
+                    </h2>
+                    <p class="article-excerpt">
+                        Web3.0将如何改变我们的互联网使用方式？从去中心化到智能合约，探索下一代互联网技术的无限可能...
+                    </p>
+                    <div class="article-footer">
+                        <span>👁️ 856</span>
+                        <span>💬 15</span>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 更多文章卡片 -->
+            <article class="article-card">
+                <div class="article-image">
+                    <img src="assets/cloud.jpg" alt="云计算">
+                </div>
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span>📅 2024-03-18</span>
+                        <span>🏷️ 云计算</span>
+                    </div>
+                    <h2 class="article-title">
+                        <a href="#">云原生架构设计实践</a>
+                    </h2>
+                    <p class="article-excerpt">
+                        探讨现代云原生应用的架构设计原则，包括微服务、容器化、服务网格等关键技术的最佳实践...
+                    </p>
+                    <div class="article-footer">
+                        <span>👁️ 723</span>
+                        <span>💬 12</span>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- 分页 -->
+        <div class="pagination">
+            <a href="#" class="page-link disabled">上一页</a>
+            <a href="#" class="page-link active">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+            <span class="page-dots">...</span>
+            <a href="#" class="page-link">10</a>
+            <a href="#" class="page-link">下一页</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,136 @@
+/* 主要内容区样式 */
+.main-container {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap: 2rem;
+}
+
+/* 文章列表样式 */
+.article-list {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.article {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--bg-dark);
+}
+
+.article-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.article-excerpt {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: var(--gradient);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+}
+
+.read-more:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.profile {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-avatar:hover {
+    transform: scale(1.05);
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--bg-dark);
+}
+
+.profile-bio {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.tags {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.tags h3 {
+    margin-bottom: 1rem;
+    color: var(--bg-dark);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .article-meta {
+        flex-wrap: wrap;
+    }
+
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+    }
+} 
